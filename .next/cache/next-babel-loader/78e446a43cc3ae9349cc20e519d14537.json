@@ -1,0 +1,1 @@
+{"ast":null,"code":"export function timeout(milliseconds, promise) {\n  return new Promise(function (resolve, reject) {\n    setTimeout(function () {\n      reject(new Error(\"timeout\"));\n    }, milliseconds);\n    promise.then(resolve, reject);\n  });\n}\n;","map":null,"metadata":{},"sourceType":"module"}
