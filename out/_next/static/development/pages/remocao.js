@@ -2167,10 +2167,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fremocao&absolutePagePath=C%3A%5CUsers%5CFelipe%20Paulino%5CDocuments%5CGitHub%5CAguaVIva%5Cpages%5Cremocao.jsx&hotRouterUpdates=true!./":
-/*!*******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fremocao&absolutePagePath=C%3A%5CUsers%5CFelipe%20Paulino%5CDocuments%5CGitHub%5CAguaVIva%5Cpages%5Cremocao.jsx&hotRouterUpdates=true ***!
-  \*******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fremocao&absolutePagePath=C%3A%5CUsers%5CLenovo%5CDocuments%5CAgua-Viva%5Cpages%5Cremocao.jsx&hotRouterUpdates=true!./":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fremocao&absolutePagePath=C%3A%5CUsers%5CLenovo%5CDocuments%5CAgua-Viva%5Cpages%5Cremocao.jsx&hotRouterUpdates=true ***!
+  \*************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2816,6 +2816,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _src_components_List__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/components/List */ "./src/components/List.jsx");
+var _jsxFileName = "C:\\Users\\Lenovo\\Documents\\Agua-Viva\\pages\\remocao.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -2862,53 +2863,172 @@ function Page() {
       setLoading(false);
     });
   }, []);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_0___default.a, null, __jsx("title", null, "Igreja Batista \xC1gua Viva - Ribeir\xE3o Pires")), __jsx("div", {
-    className: "container"
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 7
+    }
+  }, __jsx("title", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 9
+    }
+  }, "Igreja Batista \xC1gua Viva - Ribeir\xE3o Pires")), __jsx("div", {
+    className: "container",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 7
+    }
   }, __jsx("div", {
-    className: "header"
+    className: "header",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 9
+    }
   }, __jsx("img", {
-    src: "/images/logo.jpg"
-  }), __jsx("h1", null, "Listagem de controle de presen\xE7a no culto")), data && __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("div", {
-    className: "select"
-  }, __jsx("label", null, "Selecione a listagem do culto que deseja ver"), __jsx("select", {
+    src: "/images/logo.jpg",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 11
+    }
+  }), __jsx("h1", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 11
+    }
+  }, "Listagem de controle de presen\xE7a no culto")), data && __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("div", {
+    className: "select",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 13
+    }
+  }, __jsx("label", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49,
+      columnNumber: 15
+    }
+  }, "Selecione a listagem do culto que deseja ver"), __jsx("select", {
     onChange: function onChange(e) {
       setListagem(e.target.value);
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 15
     }
   }, __jsx("option", {
-    value: "todos"
+    value: "todos",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 17
+    }
   }, "Todos"), __jsx("option", {
-    value: "manha"
-  }, "Domingo - 9hs"), __jsx("option", {
-    value: "noite"
-  }, "Domingo - 18hs"))), listagem == "manha" && __jsx(_src_components_List__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    titulo: "Domingo - 9hs",
+    value: "manha",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 17
+    }
+  }, "S\xE1bado - 15hs"), __jsx("option", {
+    value: "noite",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 17
+    }
+  }, "S\xE1bado - 17:30hs"))), listagem == "manha" && __jsx(_src_components_List__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    titulo: "Sábado - 15hs",
     culto: "manha",
     orderListagem: orderListagem,
     remocao: true,
-    chegada: false
+    chegada: false,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
+      columnNumber: 15
+    }
   }), listagem == "noite" && __jsx(_src_components_List__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    titulo: "Domingo - 18hs",
+    titulo: "Sábado - 17:30hs",
     culto: "noite",
     orderListagem: orderListagem,
     remocao: true,
-    chegada: false
+    chegada: false,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80,
+      columnNumber: 15
+    }
   }), listagem == "todos" && __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_src_components_List__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    titulo: "Domingo - 9hs",
+    titulo: "Sábado - 15hs",
     culto: "manha",
     orderListagem: orderListagem,
     remocao: true,
-    chegada: false
+    chegada: false,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97,
+      columnNumber: 17
+    }
   }), __jsx(_src_components_List__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    titulo: "Domingo - 18hs",
+    titulo: "Sábado - 17:30hs",
     culto: "noite",
     orderListagem: orderListagem,
     remocao: true,
-    chegada: false
-  }))), loading && __jsx("p", null, "Carregando..."), __jsx("div", {
-    className: "box-voltar"
+    chegada: false,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 104,
+      columnNumber: 17
+    }
+  }))), loading && __jsx("p", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115,
+      columnNumber: 21
+    }
+  }, "Carregando..."), __jsx("div", {
+    className: "box-voltar",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116,
+      columnNumber: 9
+    }
   }, __jsx("a", {
     href: "/",
-    className: "button"
+    className: "button",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117,
+      columnNumber: 11
+    }
   }, "Voltar"))));
 }
 
@@ -2934,6 +3054,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
 
 
+var _jsxFileName = "C:\\Users\\Lenovo\\Documents\\Agua-Viva\\src\\components\\List.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -2943,6 +3064,8 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 function Form(_ref) {
+  var _this = this;
+
   var titulo = _ref.titulo,
       culto = _ref.culto,
       orderListagem = _ref.orderListagem,
@@ -3028,34 +3151,162 @@ function Form(_ref) {
     }
   }, [contadorCriancas]);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, __jsx("div", {
-    className: "list-header"
-  }, __jsx("h1", null, titulo), (contadorChegada === null || contadorChegada === void 0 ? void 0 : contadorChegada.length) > 0 && chegada && __jsx("span", null, __jsx("small", {
-    className: "contagem"
-  }, contadorChegada === null || contadorChegada === void 0 ? void 0 : contadorChegada.length), (contadorChegada === null || contadorChegada === void 0 ? void 0 : contadorChegada.length) == 1 && __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, " pessoa chegou "), (contadorChegada === null || contadorChegada === void 0 ? void 0 : contadorChegada.length) != 1 && __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, " pessoas chegaram "), "no culto")), soma != 0 && !chegada && !remocao && __jsx("div", {
-    className: "list-criancas"
-  }, __jsx("span", null, __jsx("img", {
-    src: "images/bebe.svg",
-    width: "25"
-  }), __jsx("small", null, " ", __jsx("b", null, soma), " ", soma == 1 ? "criança estará presente" : "crianças estarão presentes", " ", "para o cultinho"))), __jsx("table", null, __jsx("thead", null, __jsx("tr", null, __jsx("th", null, "Nome"), __jsx("th", null, "Rede"), !chegada && !remocao && __jsx("th", null, "Crian\xE7as"), chegada && __jsx("th", null, "Controle Servos"), remocao && __jsx("th", null, "Status"))), __jsx("tbody", null, orderListagem && __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, orderListagem.map(function (individuo) {
+    className: "list-header",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88,
+      columnNumber: 7
+    }
+  }, __jsx("h1", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 89,
+      columnNumber: 9
+    }
+  }, titulo), (contadorChegada === null || contadorChegada === void 0 ? void 0 : contadorChegada.length) > 0 && chegada && __jsx("span", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 91,
+      columnNumber: 11
+    }
+  }, __jsx("small", {
+    className: "contagem",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 92,
+      columnNumber: 13
+    }
+  }, contadorChegada === null || contadorChegada === void 0 ? void 0 : contadorChegada.length), (contadorChegada === null || contadorChegada === void 0 ? void 0 : contadorChegada.length) == 1 && __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, " pessoa chegou "), (contadorChegada === null || contadorChegada === void 0 ? void 0 : contadorChegada.length) != 1 && __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, " pessoas chegaram "), "no culto")), __jsx("table", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114,
+      columnNumber: 7
+    }
+  }, __jsx("thead", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115,
+      columnNumber: 9
+    }
+  }, __jsx("tr", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116,
+      columnNumber: 11
+    }
+  }, __jsx("th", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117,
+      columnNumber: 13
+    }
+  }, "Nome"), __jsx("th", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118,
+      columnNumber: 13
+    }
+  }, "Discipulado"), chegada && __jsx("th", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 120,
+      columnNumber: 25
+    }
+  }, "Controle Servos"), remocao && __jsx("th", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 121,
+      columnNumber: 25
+    }
+  }, "Status"))), __jsx("tbody", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124,
+      columnNumber: 9
+    }
+  }, orderListagem && __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, orderListagem.map(function (individuo) {
     return __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, individuo.map(function (ind) {
       if (ind.culto == culto) {
         return __jsx("tr", {
-          key: ind
-        }, __jsx("td", null, ind.nome, " ", ind.sobrenome), __jsx("td", null, "Pr ", ind.rede), !chegada && !remocao && __jsx("td", null, ind.criancas ? ind.criancas : "0"), chegada && __jsx("td", {
+          key: ind,
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 133,
+            columnNumber: 27
+          }
+        }, __jsx("td", {
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 134,
+            columnNumber: 29
+          }
+        }, ind.nome, " ", ind.sobrenome), __jsx("td", {
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 137,
+            columnNumber: 29
+          }
+        }, ind.rede), chegada && __jsx("td", {
           onClick: function onClick(e) {
             return doEdit(individuo[0], ind);
+          },
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 142,
+            columnNumber: 31
           }
         }, ind.chegada ? __jsx("img", {
           src: "images/carraca.svg",
-          className: "certo"
+          className: "certo",
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 144,
+            columnNumber: 35
+          }
         }) : __jsx("img", {
           src: "images/carraca.svg",
-          className: "nao_certo"
+          className: "nao_certo",
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 149,
+            columnNumber: 35
+          }
         }) // <div className="nao_chegou"></div>
-        ), remocao && __jsx("td", null, __jsx("button", {
+        ), remocao && __jsx("td", {
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 158,
+            columnNumber: 31
+          }
+        }, __jsx("button", {
           className: "remove",
           onClick: function onClick(e) {
             return doRemove(individuo[0], ind);
+          },
+          __self: _this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 159,
+            columnNumber: 33
           }
         }, "Remover")));
       }
@@ -3065,14 +3316,14 @@ function Form(_ref) {
 
 /***/ }),
 
-/***/ 6:
-/*!***********************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fremocao&absolutePagePath=C%3A%5CUsers%5CFelipe%20Paulino%5CDocuments%5CGitHub%5CAguaVIva%5Cpages%5Cremocao.jsx&hotRouterUpdates=true ***!
-  \***********************************************************************************************************************************************************************************/
+/***/ 3:
+/*!*****************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fremocao&absolutePagePath=C%3A%5CUsers%5CLenovo%5CDocuments%5CAgua-Viva%5Cpages%5Cremocao.jsx&hotRouterUpdates=true ***!
+  \*****************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fremocao&absolutePagePath=C%3A%5CUsers%5CFelipe%20Paulino%5CDocuments%5CGitHub%5CAguaVIva%5Cpages%5Cremocao.jsx&hotRouterUpdates=true! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fremocao&absolutePagePath=C%3A%5CUsers%5CFelipe%20Paulino%5CDocuments%5CGitHub%5CAguaVIva%5Cpages%5Cremocao.jsx&hotRouterUpdates=true!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fremocao&absolutePagePath=C%3A%5CUsers%5CLenovo%5CDocuments%5CAgua-Viva%5Cpages%5Cremocao.jsx&hotRouterUpdates=true! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fremocao&absolutePagePath=C%3A%5CUsers%5CLenovo%5CDocuments%5CAgua-Viva%5Cpages%5Cremocao.jsx&hotRouterUpdates=true!./");
 
 
 /***/ }),
@@ -3088,5 +3339,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=remocao.js.map

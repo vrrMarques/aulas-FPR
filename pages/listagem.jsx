@@ -54,28 +54,28 @@ function Page() {
                 }}
               >
                 <option value="todos">Todos</option>
-                {/* <option value="sabado">Sabado - 19hs</option> */}
-                <option value="manha">Domingo - 9hs</option>
-                <option value="noite">Domingo - 18hs</option>
+                {/* <option value="sabado">Sabado - 115hs</option> */}
+                <option value="manha">Sábado - 15hs</option>
+                <option value="noite">Sábado - 17:30hs</option>
               </select>
             </div>
             {/* {listagem == "sabado" && (
               <List
-                titulo={"Sabado - 19hs"}
+                titulo={"Sabado - 115hs"}
                 culto={"sabado"}
                 orderListagem={orderListagem}
               />
             )} */}
             {listagem == "manha" && (
               <List
-                titulo={"Domingo - 9hs"}
+                titulo={"Sábado - 15hs"}
                 culto={"manha"}
                 orderListagem={orderListagem}
               />
             )}
             {listagem == "noite" && (
               <List
-                titulo={"Domingo - 18hs"}
+                titulo={"Sábado - 17:30hs"}
                 culto={"noite"}
                 orderListagem={orderListagem}
               />
@@ -83,17 +83,17 @@ function Page() {
             {listagem == "todos" && (
               <>
                 {/* <List
-                  titulo={"Sabado - 19hs"}
+                  titulo={"Sabado - 115hs"}
                   culto={"sabado"}
                   orderListagem={orderListagem}
                 /> */}
                 <List
-                  titulo={"Domingo - 9hs"}
+                  titulo={"Sábado - 15hs"}
                   culto={"manha"}
                   orderListagem={orderListagem}
                 />
                 <List
-                  titulo={"Domingo - 18hs"}
+                  titulo={"Sábado - 17:30hs"}
                   culto={"noite"}
                   orderListagem={orderListagem}
                 />

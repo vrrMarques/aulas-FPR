@@ -11,9 +11,9 @@ export default function Form({
   controle,
 }) {
   const [soma, setSoma] = useState();
-  const doRemove = (id, data) => {
-    remove(`https://aguaviva-rp.firebaseio.com/teste/${id}.json`, data);
-  };
+  // const doRemove = (id, data) => {
+  //   remove(`https://aguaviva-rp.firebaseio.com/teste/${id}.json`, data);
+  // };
   const remove = (url, data) => {
     Axios.delete(url).then(() => {
       alert(`você removeu ${data.nome} da listagem`);
@@ -96,7 +96,7 @@ export default function Form({
           </span>
         )}
       </div>
-      {soma != 0 && !chegada && !remocao && (
+      {/* {soma != 0 && !chegada && !remocao && (
         <div className="list-criancas">
           <span>
             <img src="images/bebe.svg" width="25" />
@@ -110,13 +110,13 @@ export default function Form({
             </small>
           </span>
         </div>
-      )}
+      )} */}
       <table>
         <thead>
           <tr>
             <th>Nome</th>
-            <th>Rede</th>
-            {!chegada && !remocao && <th>Crianças</th>}
+            <th>Discipulado</th>
+            {/* {!chegada && !remocao && <th>Crianças</th>} */}
             {chegada && <th>Controle Servos</th>}
             {remocao && <th>Status</th>}
           </tr>
@@ -134,10 +134,10 @@ export default function Form({
                             <td>
                               {ind.nome} {ind.sobrenome}
                             </td>
-                            <td>Pr {ind.rede}</td>
-                            {!chegada && !remocao && (
+                            <td>{ind.rede}</td>
+                            {/* {!chegada && !remocao && (
                               <td>{ind.criancas ? ind.criancas : "0"}</td>
-                            )}
+                            )} */}
                             {chegada && (
                               <td onClick={(e) => doEdit(individuo[0], ind)}>
                                 {ind.chegada ? (

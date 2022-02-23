@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from \"react\";\nexport default function Logo() {\n  return __jsx(\"a\", {\n    href: \"/\"\n  }, __jsx(\"img\", {\n    className: \"logo\",\n    src: \"/images/logo.png\",\n    alt: \"petz\"\n  }));\n}","map":null,"metadata":{},"sourceType":"module"}

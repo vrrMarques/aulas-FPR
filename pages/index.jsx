@@ -6,7 +6,12 @@ import Axios from "axios";
 
 // import { console } from "window-or-global";
 
+
 function Page() {
+
+  //RENDIRAZAÇÃO CONDICIONAL OU CONDIÇÃO TERNARIA
+
+  
   function initialGA() {
     ReactGA.initialize("UA-170909874-1");
     ReactGA.pageview(urlLocal);
@@ -40,7 +45,7 @@ function Page() {
   const [redeLimpar, setRedeLimpar] = useState(true);
   const [criancasLimpar, setCriancasLimpar] = useState(true);
   const [listagem, setListagem] = useState();
-  var qtdMAxima = 100;
+  var qtdMAxima = 75;
   useEffect(() => {
     setLoading(true);
     Axios.get(url).then((res) => {
@@ -63,7 +68,8 @@ function Page() {
       });
       setQtdDomingoNoite(cultoDomingoNoite.length);
       setListagem(data);
-      // if (dia_sem >= 1 && dia_sem <= 3) {
+      // ATENÇÃO USE ESSE CÓDIGO COM CAUTELA, REMOVE TUDO //
+      // if (dia_sem >= 1 && dia_sem <= 5) {
       //   Object.entries(data).map((individuo) => {
       //     if (individuo[0] != "base") {
       //       doRemove(individuo[0]);
@@ -111,22 +117,35 @@ function Page() {
     }
   };
 
+
+
+  // null | "" | undefined | false
+const existe = true
+
+
+// 1 se eu colocar minha variavel com um valor que existe meu select vai exibir os cultos de sabados
+//quando nao atender ela vai exibir cultos de terça feira
+
+// 2 criar uma segunda variavel que se for igual a "Ativo" exiba o botao inscrever
+
   return (
     <>
+      {/* {existe && <>teste</>} 
+      {existe ? <>teste</> : <>teste2</>} */}
       <Head>
         <title>Igreja Batista Água Viva - Ribeirão Pires</title>
       </Head>
-
+      {existe && (
       <div className="container">
         <div className="header">
           <img src="/images/logo.jpg" />
-          <h1>Formulário de controle de presença no culto</h1>
+          <h1>Formulário para culto dos jovens (24/04)</h1>
         </div>
 
         {/* {(qtdSabado < qtdMAxima || */}
         {(qtdDomingoManha < qtdMAxima || qtdDomingoNoite < qtdMAxima) && (
-          <>
-            {(dia_sem == 0 || dia_sem == 5 || dia_sem == 6) && (
+          // <>
+          //   {(dia_sem == 0 || dia_sem == 5 || dia_sem == 6) && (
               <>
                 {listagem ? (
                   <div className="form">
@@ -169,7 +188,7 @@ function Page() {
                       />
                     )}
                     <br></br>
-                    <label>Rede</label>
+                    <label>Discipulado</label>
                     {redeLimpar && (
                       <select
                         onChange={(e) => {
@@ -177,14 +196,14 @@ function Page() {
                         }}
                         required
                       >
-                        <option value="">Selecione sua rede</option>
-                        <option value="manoel">Pr Manoel - Ebenezér</option>
-                        <option value="gilberto">Pr Gilberto - Kadosh</option>
-                        <option value="lincoln">Pr Lincoln - Shekinah</option>
-                        <option value="reginaldo">
-                          Pr Reginaldo - Radicais
+                        <option value="">Selecione seu discipulado</option>
+                        <option value="isabela">Isabela Amaro</option>
+                        <option value="matheus">Matheus Amaro</option>
+                        <option value="felipe">Felipe Ramos</option>
+                        <option value="silas">
+                          Silas Souza
                         </option>
-                        <option value="darliene">Pr Darliene - Kids </option>
+                        <option value="elaine">Elaine Jeremias </option>
                       </select>
                     )}
                     {!redeLimpar && (
@@ -194,14 +213,14 @@ function Page() {
                         }}
                         required
                       >
-                        <option value="">Selecione sua rede</option>
-                        <option value="manoel">Pr Manoel - Ebenezér</option>
-                        <option value="gilberto">Pr Gilberto - Kadosh</option>
-                        <option value="lincoln">Pr Lincoln - Shekinah</option>
-                        <option value="reginaldo">
-                          Pr Reginaldo - Radicais
+                        <option value="">Selecione seu discipulado</option>
+                        <option value="isabela">Isabela Amaro</option>
+                        <option value="matheus">Matheus Amaro</option>
+                        <option value="felipe">Felipe Ramos</option>
+                        <option value="silas">
+                          Silas Souza
                         </option>
-                        <option value="darliene">Pr Darliene - Kids </option>
+                        <option value="elaine">Elaine Jeremias </option>
                       </select>
                     )}
                     <br></br>
@@ -217,15 +236,15 @@ function Page() {
                         <option value="sabado">Sábado - 19hs</option>
                       )} */}
                       {qtdDomingoManha < qtdMAxima && (
-                        <option value="manha">Domingo - 9hs</option>
+                        <option value="manha">Sábado - 15hs</option>
                       )}
                       {qtdDomingoNoite < qtdMAxima && (
-                        <option value="noite">Domingo - 18hs </option>
+                        <option value="noite">Sábado - 17:30hs </option>
                       )}
                     </select>
-                    <br></br>
-                    <label>Quantas crianças vai levar para o cultinho?</label>
-                    {criancasLimpar && (
+                    {/* <br></br>
+                    <label>Quantas crianças vai levar para o cultinho?</label> */}
+                    {/* {criancasLimpar && (
                       <input
                         onKeyUp={(e) => setCriancas(e.currentTarget.value)}
                         type="number"
@@ -240,7 +259,7 @@ function Page() {
                         placeholder="Numero de crianças"
                         required
                       />
-                    )}
+                    )} */}
                     <div className="vagas">
                       {/* <span>
                         Sábado 19hs -
@@ -262,7 +281,7 @@ function Page() {
                         )}
                       </span> */}
                       <span>
-                        Domingo 9hs -
+                        Sábado 15:00hs -
                         {qtdDomingoManha >= qtdMAxima && (
                           <small className="red"> vagas encerradas</small>
                         )}
@@ -288,7 +307,7 @@ function Page() {
                         )}
                       </span>
                       <span>
-                        Domingo 18hs -
+                        Sábado 17:30hs -
                         {qtdDomingoNoite >= qtdMAxima && (
                           <small className="red"> vagas encerradas</small>
                         )}
@@ -328,8 +347,8 @@ function Page() {
                   </p>
                 )}
               </>
-            )}
-          </>
+          //   )}
+          // </>
         )}
 
         {/* {qtdSabado >= qtdMAxima && */}
@@ -361,7 +380,7 @@ function Page() {
               </p>
             </div>
           )}
-        {dia_sem >= 1 && dia_sem <= 4 && (
+        {/* {dia_sem >= 1 && dia_sem <= 4 && (
           <div>
             <p className="paragrafo">
               O site só abrirá as inscrições <b>sexta-feira as 00hs</b>
@@ -379,8 +398,9 @@ function Page() {
               </div>
             </p>
           </div>
-        )}
+        )} */}
       </div>
+    )}
     </>
   );
 }
