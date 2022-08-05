@@ -110,7 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_ga__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\Lenovo\\Documents\\Agua-Viva\\pages\\index.jsx";
+var _jsxFileName = "C:\\Users\\Vinicius\\Desktop\\Agua-Viva\\pages\\index.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -120,6 +120,9 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 function Page() {
   //RENDIRAZAÇÃO CONDICIONAL OU CONDIÇÃO TERNARIA
+  const seletor = false;
+  const sumiu = "nao-ta-ativo";
+
   function initialGA() {
     react_ga__WEBPACK_IMPORTED_MODULE_2___default.a.initialize("UA-170909874-1");
     react_ga__WEBPACK_IMPORTED_MODULE_2___default.a.pageview(urlLocal);
@@ -281,14 +284,14 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135,
+      lineNumber: 136,
       columnNumber: 7
     }
   }, __jsx("title", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136,
+      lineNumber: 137,
       columnNumber: 9
     }
   }, "Igreja Batista \xC1gua Viva - Ribeir\xE3o Pires")), existe && __jsx("div", {
@@ -296,7 +299,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139,
+      lineNumber: 140,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -304,7 +307,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140,
+      lineNumber: 141,
       columnNumber: 9
     }
   }, __jsx("img", {
@@ -312,14 +315,14 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141,
+      lineNumber: 142,
       columnNumber: 11
     }
   }), __jsx("h1", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142,
+      lineNumber: 143,
       columnNumber: 11
     }
   }, "Formul\xE1rio para culto dos jovens (24/04)")), (qtdDomingoManha < qtdMAxima || qtdDomingoNoite < qtdMAxima) && // <>
@@ -329,14 +332,14 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 151,
+      lineNumber: 152,
       columnNumber: 19
     }
   }, __jsx("label", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 152,
+      lineNumber: 153,
       columnNumber: 21
     }
   }, "Nome"), nomeLimpar && __jsx("input", {
@@ -348,7 +351,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154,
+      lineNumber: 155,
       columnNumber: 23
     }
   }), !nomeLimpar && __jsx("input", {
@@ -360,21 +363,21 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 163,
+      lineNumber: 164,
       columnNumber: 23
     }
   }), __jsx("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 172,
+      lineNumber: 173,
       columnNumber: 21
     }
   }), __jsx("label", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 173,
+      lineNumber: 174,
       columnNumber: 21
     }
   }, "Sobrenome"), sobrenomeLimpar && __jsx("input", {
@@ -385,7 +388,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 175,
+      lineNumber: 176,
       columnNumber: 23
     }
   }), !sobrenomeLimpar && __jsx("input", {
@@ -396,21 +399,21 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 183,
+      lineNumber: 184,
       columnNumber: 23
     }
   }), __jsx("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 190,
+      lineNumber: 191,
       columnNumber: 21
     }
   }), __jsx("label", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 191,
+      lineNumber: 192,
       columnNumber: 21
     }
   }, "Discipulado"), redeLimpar && __jsx("select", {
@@ -421,7 +424,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 193,
+      lineNumber: 194,
       columnNumber: 23
     }
   }, __jsx("option", {
@@ -429,7 +432,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 199,
+      lineNumber: 200,
       columnNumber: 25
     }
   }, "Selecione seu discipulado"), __jsx("option", {
@@ -437,7 +440,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 200,
+      lineNumber: 201,
       columnNumber: 25
     }
   }, "Isabela Amaro"), __jsx("option", {
@@ -445,7 +448,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 201,
+      lineNumber: 202,
       columnNumber: 25
     }
   }, "Matheus Amaro"), __jsx("option", {
@@ -453,7 +456,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 202,
+      lineNumber: 203,
       columnNumber: 25
     }
   }, "Felipe Ramos"), __jsx("option", {
@@ -461,7 +464,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 203,
+      lineNumber: 204,
       columnNumber: 25
     }
   }, "Silas Souza"), __jsx("option", {
@@ -469,7 +472,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 206,
+      lineNumber: 207,
       columnNumber: 25
     }
   }, "Elaine Jeremias ")), !redeLimpar && __jsx("select", {
@@ -480,7 +483,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 210,
+      lineNumber: 211,
       columnNumber: 23
     }
   }, __jsx("option", {
@@ -488,7 +491,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 216,
+      lineNumber: 217,
       columnNumber: 25
     }
   }, "Selecione seu discipulado"), __jsx("option", {
@@ -496,7 +499,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 217,
+      lineNumber: 218,
       columnNumber: 25
     }
   }, "Isabela Amaro"), __jsx("option", {
@@ -504,7 +507,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 218,
+      lineNumber: 219,
       columnNumber: 25
     }
   }, "Matheus Amaro"), __jsx("option", {
@@ -512,7 +515,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 219,
+      lineNumber: 220,
       columnNumber: 25
     }
   }, "Felipe Ramos"), __jsx("option", {
@@ -520,7 +523,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 220,
+      lineNumber: 221,
       columnNumber: 25
     }
   }, "Silas Souza"), __jsx("option", {
@@ -528,21 +531,21 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 223,
+      lineNumber: 224,
       columnNumber: 25
     }
   }, "Elaine Jeremias ")), __jsx("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 226,
+      lineNumber: 227,
       columnNumber: 21
     }
   }), __jsx("label", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 227,
+      lineNumber: 228,
       columnNumber: 21
     }
   }, "Qual culto deseja ir?"), __jsx("select", {
@@ -553,7 +556,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 228,
+      lineNumber: 229,
       columnNumber: 21
     }
   }, __jsx("option", {
@@ -561,38 +564,54 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 234,
+      lineNumber: 235,
       columnNumber: 23
     }
-  }, "Selecione o culto"), qtdDomingoManha < qtdMAxima && __jsx("option", {
+  }, "Selecione o culto"), seletor ? __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, qtdDomingoManha < qtdMAxima && __jsx("option", {
     value: "manha",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 239,
-      columnNumber: 25
+      lineNumber: 240,
+      columnNumber: 24
     }
   }, "S\xE1bado - 15hs"), qtdDomingoNoite < qtdMAxima && __jsx("option", {
     value: "noite",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 242,
+      lineNumber: 243,
       columnNumber: 25
     }
-  }, "S\xE1bado - 17:30hs ")), __jsx("div", {
+  }, "S\xE1bado - 17:30hs ")) : __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, qtdDomingoManha < qtdMAxima && __jsx("option", {
+    value: "manha",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 246,
+      columnNumber: 25
+    }
+  }, "Ter\xE7a - 16:50hs"), qtdDomingoNoite < qtdMAxima && __jsx("option", {
+    value: "noite",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 249,
+      columnNumber: 26
+    }
+  }, "Ter\xE7a - 21:48hs "))), __jsx("div", {
     className: "vagas",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 263,
+      lineNumber: 272,
       columnNumber: 21
     }
   }, __jsx("span", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 283,
+      lineNumber: 292,
       columnNumber: 23
     }
   }, "S\xE1bado 15:00hs -", qtdDomingoManha >= qtdMAxima && __jsx("small", {
@@ -600,21 +619,21 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 286,
+      lineNumber: 295,
       columnNumber: 27
     }
   }, " vagas encerradas"), qtdDomingoManha < qtdMAxima && __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, qtdDomingoManha >= 0 && __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, " ", "resta", qtdDomingoManha != qtdMAxima - 1 && __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, "m")), qtdDomingoManha >= 0 && __jsx("small", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 298,
+      lineNumber: 307,
       columnNumber: 31
     }
   }, " ", qtdMAxima - qtdDomingoManha), qtdDomingoManha >= 0 && __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, " ", "vaga", qtdDomingoManha != qtdMAxima - 1 && __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, "s")))), __jsx("span", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 309,
+      lineNumber: 318,
       columnNumber: 23
     }
   }, "S\xE1bado 17:30hs -", qtdDomingoNoite >= qtdMAxima && __jsx("small", {
@@ -622,30 +641,30 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 312,
+      lineNumber: 321,
       columnNumber: 27
     }
   }, " vagas encerradas"), qtdDomingoNoite < qtdMAxima && __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, qtdDomingoNoite >= 0 && __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, " ", "resta", qtdDomingoNoite != qtdMAxima - 1 && __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, "m")), qtdDomingoNoite >= 0 && __jsx("small", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 324,
+      lineNumber: 333,
       columnNumber: 31
     }
   }, " ", qtdMAxima - qtdDomingoNoite), qtdDomingoNoite >= 0 && __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, " ", "vaga", qtdDomingoNoite != qtdMAxima - 1 && __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, "s"))))), __jsx("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 337,
+      lineNumber: 346,
       columnNumber: 21
     }
-  }), __jsx("button", {
+  }), sumiu === "ativo" && __jsx("button", {
     onClick: salve,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 338,
-      columnNumber: 21
+      lineNumber: 347,
+      columnNumber: 43
     }
   }, "Inscrever"), __jsx("a", {
     href: "/listagem.html",
@@ -653,7 +672,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 339,
+      lineNumber: 348,
       columnNumber: 21
     }
   }, "Verifique a listagem")) : __jsx("p", {
@@ -661,7 +680,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 344,
+      lineNumber: 353,
       columnNumber: 19
     }
   }, __jsx("img", {
@@ -669,14 +688,14 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 345,
+      lineNumber: 354,
       columnNumber: 21
     }
   }), __jsx("span", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 346,
+      lineNumber: 355,
       columnNumber: 21
     }
   }, "Carregando..."))) //   )}
@@ -685,7 +704,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 361,
+      lineNumber: 370,
       columnNumber: 13
     }
   }, __jsx("p", {
@@ -693,7 +712,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 362,
+      lineNumber: 371,
       columnNumber: 15
     }
   }, "Infelizmente todos os cultos presenciais ja esgotaram sua capacidade exigida por lei, mas acompanhe online pelas nossas redes sociais", __jsx("div", {
@@ -701,7 +720,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 366,
+      lineNumber: 375,
       columnNumber: 17
     }
   }, __jsx("a", {
@@ -709,7 +728,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 367,
+      lineNumber: 376,
       columnNumber: 19
     }
   }, __jsx("img", {
@@ -718,7 +737,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 368,
+      lineNumber: 377,
       columnNumber: 21
     }
   })), __jsx("a", {
@@ -726,7 +745,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 370,
+      lineNumber: 379,
       columnNumber: 19
     }
   }, __jsx("img", {
@@ -735,7 +754,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 371,
+      lineNumber: 380,
       columnNumber: 21
     }
   })), __jsx("a", {
@@ -743,7 +762,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 373,
+      lineNumber: 382,
       columnNumber: 19
     }
   }, __jsx("img", {
@@ -752,7 +771,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 374,
+      lineNumber: 383,
       columnNumber: 21
     }
   }))), __jsx("a", {
@@ -761,7 +780,7 @@ function Page() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 377,
+      lineNumber: 386,
       columnNumber: 17
     }
   }, "Verifique a listagem dos cultos presenciais")))));
@@ -778,7 +797,7 @@ function Page() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Lenovo\Documents\Agua-Viva\pages\index.jsx */"./pages/index.jsx");
+module.exports = __webpack_require__(/*! C:\Users\Vinicius\Desktop\Agua-Viva\pages\index.jsx */"./pages/index.jsx");
 
 
 /***/ }),

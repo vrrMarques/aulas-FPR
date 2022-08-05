@@ -10,7 +10,8 @@ import Axios from "axios";
 function Page() {
 
   //RENDIRAZAÇÃO CONDICIONAL OU CONDIÇÃO TERNARIA
-
+  const seletor = false
+  const sumiu = "nao-ta-ativo"
   
   function initialGA() {
     ReactGA.initialize("UA-170909874-1");
@@ -235,12 +236,20 @@ const existe = true
                       {/* {qtdSabado < qtdMAxima && (
                         <option value="sabado">Sábado - 19hs</option>
                       )} */}
-                      {qtdDomingoManha < qtdMAxima && (
-                        <option value="manha">Sábado - 15hs</option>
+                      {seletor ? <>{qtdDomingoManha < qtdMAxima && (
+                       <option value="manha">Sábado - 15hs</option>
                       )}
                       {qtdDomingoNoite < qtdMAxima && (
                         <option value="noite">Sábado - 17:30hs </option>
-                      )}
+                      )}</> :
+                      <>{qtdDomingoManha < qtdMAxima && (
+                        <option value="manha">Terça - 16:50hs</option>
+                       )}
+                       {qtdDomingoNoite < qtdMAxima && (
+                         <option value="noite">Terça - 21:48hs </option>
+                       )}</>
+                      }
+                      
                     </select>
                     {/* <br></br>
                     <label>Quantas crianças vai levar para o cultinho?</label> */}
@@ -335,7 +344,7 @@ const existe = true
                     </div>
 
                     <br></br>
-                    <button onClick={salve}>Inscrever</button>
+                    {sumiu ==="ativo" && (<button onClick={salve}>Inscrever</button>)}
                     <a href="/listagem.html" className="listagem">
                       Verifique a listagem
                     </a>
