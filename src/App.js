@@ -1,6 +1,6 @@
 
 import './App.css';
-import {teste} from './utils'
+import {Teste} from './utils'
 import {Click} from './utils'
 function App() {
   
@@ -8,8 +8,9 @@ function App() {
   return (
     <div className="App">
       <form>
-        <input onChange={(e)=>{teste(e.target.value)}}/>
-        <button onClick={()=>{Click()}}>Mensagem</button>
+        <input onChange={(e)=>{Teste(e.target.value)}} placeholder='instrumento'/>
+        <input onChange={(e)=>{Click(e.target.value)}}placeholder='Campeão do lol'/>
+       
       </form>
     </div>
   );
