@@ -1,6 +1,6 @@
 const Page1 = ()=>{
     return(
-        <h1>pagina 1</h1>
+        <h1>Escolha entre split e Query-string</h1>
     )
 }
 
