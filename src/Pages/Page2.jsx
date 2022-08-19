@@ -1,6 +1,9 @@
-const Page2 = ()=>{
-    return(
-        <h1>pagina 2 </h1>
+const Page2 = () => {
+
+    const nome = localStorage.getItem('usuario')
+
+    return (
+        <h1>{`Bem vindo ${nome}`}</h1>
     )
 }
 
